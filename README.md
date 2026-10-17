@@ -29,7 +29,7 @@ It simulates five philosophers sharing five forks and demonstrates different met
 Forks are acquired in a consistent numerical order. This prevents circular wait and therefore prevents deadlock.
 
 ### Strategy 2: Waiter / N-1 Semaphore
-A semaphore permits at most four of the five philosophers to compete for forks at once. This prevents the circular-wait deadlock in this implementation.
+A semaphore permits at most four of the five philosophers to compete for forks at once. This prevents circular-wait deadlock in this implementation.
 
 ### Strategy 3: Fair FIFO Queue
 Philosophers receive tickets and requests are handled in ticket order. This helps prevent later requests from overtaking earlier requests. Progress still depends on normal thread scheduling.
